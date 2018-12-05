@@ -1,4 +1,5 @@
 <head>
+    // user-scalable=no for unzoom layout
     <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>LIFF Starter</title>
     <link rel="stylesheet" href="style.css">
@@ -93,23 +94,34 @@
         <div class="control-group">
             <h1>Radio buttons</h1>
             <label class="control control--radio">First radio
-                <input type="radio" name="radio" checked="checked" value="allot"/>
+                <input type="radio" name="radio" checked="checked" id="regioncheck" value="region"/>
                 <div class="control__indicator"></div>
             </label>
-            <p>
-                <div class="select">
-                    <select>
-                        <option>First select1</option>
-                        <option>Option</option>
-                        <option>Option</option>
-                    </select>
-                    <div class="select__arrow"></div>
-                </div>
-            </p>
+            
+            <dd>
+            <label class="control control--checkbox">First checkbox
+            <input type="checkbox" checked="checked" name ="regioncheck"/>
+            <div class="control__indicator"></div>
+            </label>
+            </dd>
+            
+            
             <label class="control control--radio">Second radio
-                <input type="radio" name="radio" value="transfer"/>
+                <input type="radio" name="radio" id="provincecheck" value="province"/>
                 <div class="control__indicator"></div>
             </label>
+            
+            <dd>
+            <div class="select">
+            <select disabled="disabled" id="provinceselect">
+            <option>Disabled</option>
+            <option>Option</option>
+            <option>Option</option>
+            </select>
+            <div class="select__arrow"></div>
+            </div>
+            </dd>
+            
             <label class="control control--radio">Disabled
                 <input type="radio" name="radio2" disabled="disabled"/>
                 <div class="control__indicator"></div>
@@ -168,15 +180,18 @@
     
     $(document).ready(function(){
         $('input[type=radio][name=radio]').change(function() {
-            if (this.value == 'allot') {
-                alert("Allot Thai Gayo Bhai");
+            if (this.value == 'region') {
+                $('#provinceselect').prop('disabled', true);
+                $('input[type=checkbox][name=regioncheck]').prop('disabled', false);
             }
-            else if (this.value == 'transfer') {
-                alert("Transfer Thai Gayo");
+            else if (this.value == 'province') {
+                $('#provinceselect').prop('disabled', false);
+                $('input[type=checkbox][name=regioncheck]').prop('disabled', true);
             }
         });
     });
     
     </script>
     
+
 </body>
