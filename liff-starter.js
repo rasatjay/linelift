@@ -2,6 +2,10 @@ window.onload = function (e) {
     liff.init(function (data) {
         initializeApp(data);
     });
+    
+    
+
+
 };
 
 function initializeApp(data) {
@@ -71,3 +75,23 @@ function toggleProfileData() {
         elem.style.display = "block";
     }
 }
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+<script>
+
+    $('input[type=radio][name=radio]').change(function() {
+            if (this.value == 'allot') {
+                alert("Allot Thai Gayo Bhai");
+            }
+            else if (this.value == 'transfer') {
+                alert("Transfer Thai Gayo");
+            }
+    });
+
+</script>
+                  
+                  
+                  
+                  
