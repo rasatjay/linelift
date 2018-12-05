@@ -159,6 +159,8 @@ h1 {
 .select select {
     display: inline-block;
     width: 100%;
+    max-width: 400px;
+    min-width: 180px;
     cursor: pointer;
     padding: 10px 15px;
     outline: 0;
@@ -170,7 +172,7 @@ h1 {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-.select select:: {
+.select select::-ms-expand {
     display: none;
 }
 .select select:hover,
