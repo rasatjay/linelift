@@ -170,7 +170,7 @@ h1 {
     -webkit-appearance: none;
     -moz-appearance: none;
 }
-.select select::-ms-expand {
+.select select:: {
     display: none;
 }
 .select select:hover,
