@@ -34,7 +34,7 @@ function initializeApp(data) {
 		var optionss = "aaaa";
         liff.sendMessages([{
             type: 'text',
-            text: optionss
+            text: 'asfd'
         }, {
             type: 'sticker',
             packageId: '2',
