@@ -30,11 +30,9 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-		//var optionss = document.getElementById('useridprofilefield').value;
-		var optionss = "aaaa";
         liff.sendMessages([{
             type: 'text',
-            text: 'asfd'
+            text: "You"
         }, {
             type: 'sticker',
             packageId: '2',
