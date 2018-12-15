@@ -59,7 +59,6 @@ function initializeApp(data) {
         //    stickerId: '144'
         //}
 		]).then(function () {
-            window.alert("Message sent");
 			liff.closeWindow();
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
