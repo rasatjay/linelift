@@ -101,7 +101,7 @@
             </label>
             
             <dd>
-			<label class="control control--checkbox"> ภาคกลาง
+			<label class="control control--checkbox"> ภาคกลางl
             <input type="checkbox" checked="checked" name ="regioncheck" value="2"/>
             <div class="control__indicator"></div>
             </label>
@@ -283,15 +283,15 @@
         $('input[type=radio][name=radio]').change(function() {
             if (this.value == 'region') {
                 $('#provinceselect').prop('disabled', true);
-				//$('#provincecheck').value("");
+				//$('#provincecheck').val("");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', false);
-				//$('#regioncheck').value("region");
+				//$('#regioncheck').val("region");
             }
             else if (this.value == 'province') {
                 $('#provinceselect').prop('disabled', false);
-				//$('#provincecheck').value("province");
+				//$('#provincecheck').val("province");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', true);
-				//$('#regioncheck').value("");
+				//$('#regioncheck').val("");
             }
         });
     });
