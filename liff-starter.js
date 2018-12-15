@@ -33,7 +33,7 @@ function initializeApp(data) {
 		sendtext += areatype;
         liff.sendMessages([{
             type: 'text',
-            text: areatype
+            text: sendtext
         }
 		
 		
