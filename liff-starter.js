@@ -26,7 +26,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-		var testtext = "hello"
+		var testtext = document.getElementById('regioncheck').value;
         liff.sendMessages([{
             type: 'text',
             text: testtext
