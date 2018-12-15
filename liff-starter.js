@@ -26,7 +26,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-		var testtext = "hello"
+		var testtext = "hello";
         liff.sendMessages([{
             type: testtext,
             text: "You've successfully sent a message! Hooray!"
