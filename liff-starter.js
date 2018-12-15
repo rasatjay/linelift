@@ -60,6 +60,7 @@ function initializeApp(data) {
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
+		liff.closeWindow();
     });
 
     //get profile call
