@@ -26,11 +26,15 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-		var testtext = document.getElementById('regioncheck').value;
+		var areatype;
+		if (document.getElementById('regioncheck').checked) {areatype = "region";}
+		else if (document.getElementById('provincecheck').checked) {areatype = "province";}
         liff.sendMessages([{
             type: 'text',
             text: testtext
         }
+		
+		
 		//, {
         //    type: 'sticker',
         //    packageId: '2',
