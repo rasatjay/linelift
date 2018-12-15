@@ -44,6 +44,9 @@ function initializeApp(data) {
 
 		}
 		
+		
+		
+		
         liff.sendMessages([{
             type: 'text',
             text: sendtext
@@ -57,6 +60,7 @@ function initializeApp(data) {
         //}
 		]).then(function () {
             window.alert("Message sent");
+			liff.closeWindow();
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
