@@ -101,7 +101,7 @@
             </label>
             
             <dd>
-			<label class="control control--checkbox"> ภาคกลางl
+			<label class="control control--checkbox"> middle
             <input type="checkbox" checked="checked" name ="regioncheck" value="2"/>
             <div class="control__indicator"></div>
             </label>
@@ -131,7 +131,7 @@
             
             
             <label class="control control--radio">Second radio
-                <input type="radio" name="radio" id="provincecheck" value=""/>
+                <input type="radio" name="radio" id="provincecheck" value="province"/>
                 <div class="control__indicator"></div>
             </label>
             
@@ -278,20 +278,19 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
     
+    document.getElementById('province').addEventListener('click', function () {
+    alert("Transfer Thai Gayo");
+    });
     
     $(document).ready(function(){
         $('input[type=radio][name=radio]').change(function() {
             if (this.value == 'region') {
                 $('#provinceselect').prop('disabled', true);
-				//$('#provincecheck').val("");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', false);
-				//$('#regioncheck').val("region");
             }
             else if (this.value == 'province') {
                 $('#provinceselect').prop('disabled', false);
-				//$('#provincecheck').val("province");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', true);
-				//$('#regioncheck').val("");
             }
         });
     });
