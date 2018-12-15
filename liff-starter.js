@@ -57,11 +57,9 @@ function initializeApp(data) {
         //}
 		]).then(function () {
             window.alert("Message sent");
-				//	liff.closeWindow();
         }).catch(function (error) {
             window.alert("Error sending message: " + error);
         });
-
     });
 
     //get profile call
