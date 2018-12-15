@@ -18,12 +18,38 @@
             <button id="sendmessagebutton">Send Messages</button>
         </div>
     </div>
+	
+	<div hidden id="liffdata">
+        <h2>LIFF Data</h2>
+        <table border="1">
+            <tr>
+                <th>language</th>
+                <td id="languagefield"></td>
+            </tr>
+            <tr>
+                <th>context.viewType</th>
+                <td id="viewtypefield"></td>
+            </tr>
+            <tr>
+                <th>context.userId</th>
+                <td id="useridfield"></td>
+            </tr>
+            <tr>
+                <th>context.utouId</th>
+                <td id="utouidfield"></td>
+            </tr>
+            <tr>
+                <th>context.roomId</th>
+                <td id="roomidfield"></td>
+            </tr>
+            <tr>
+                <th>context.groupId</th>
+                <td id="groupidfield"></td>
+            </tr>
+        </table>
+    </div>
 
    
-
-
-    
-    
     
     
     <div class="container">
@@ -171,21 +197,13 @@
 <option value=﻿"23">อุบลราชธานี   </option>
 
 
-			
             </select>
-            <div class="select__arrow"></div>
+			<div class="select__arrow"></div>
             </div>
             </dd>
-            
-            <label class="control control--radio">Disabled
-                <input type="radio" name="radio2" disabled="disabled"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--radio">Disabled & checked
-                <input type="radio" name="radio2" disabled="disabled" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
         </div>
+		
+		
         <div class="control-group">
             <h1>Select boxes</h1>
             <div class="select">
@@ -196,56 +214,60 @@
                 </select>
                 <div class="select__arrow"></div>
             </div>
-                <div class="select">
-                <select>
-                    <option>Second select</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
-                <div class="select__arrow"></div>
-            </div>
-            <div class="select">
-                <select disabled="disabled">
-                    <option>Disabled</option>
-                    <option>Option</option>
-                    <option>Option</option>
-                </select>
-                <div class="select__arrow"></div>
-            </div>
+               <form id="monthform">
+				<dd>
+					<label class="control control--checkbox" style="width = 30px;"> Jan
+						<input type="checkbox" name ="monthcheck" value="1"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Feb
+						<input type="checkbox" name ="monthcheck" value="2"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Mar
+						<input type="checkbox" name ="monthcheck" value="3"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Apr
+						<input type="checkbox" name ="monthcheck" value="4"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> May
+						<input type="checkbox" name ="monthcheck" value="5"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Jun
+						<input type="checkbox" name ="monthcheck" value="6"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Jul
+						<input type="checkbox" name ="monthcheck" value="7"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Aug
+						<input type="checkbox" name ="monthcheck" value="8"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Sep
+						<input type="checkbox" name ="monthcheck" value="9"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Oct
+						<input type="checkbox" name ="monthcheck" value="10"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Nov
+						<input type="checkbox" name ="monthcheck" value="11"/>
+						<div class="control__indicator"></div>
+					</label>
+					<label class="control control--checkbox"> Dec
+						<input type="checkbox" name ="monthcheck" value="12"/>
+						<div class="control__indicator"></div>
+					</label>
+
+			</form>
         </div>
     </div>
-    
-    
-     <div hidden id="liffdata">
-        <h2>LIFF Data</h2>
-        <table border="1">
-            <tr>
-                <th>language</th>
-                <td id="languagefield"></td>
-            </tr>
-            <tr>
-                <th>context.viewType</th>
-                <td id="viewtypefield"></td>
-            </tr>
-            <tr>
-                <th>context.userId</th>
-                <td id="useridfield"></td>
-            </tr>
-            <tr>
-                <th>context.utouId</th>
-                <td id="utouidfield"></td>
-            </tr>
-            <tr>
-                <th>context.roomId</th>
-                <td id="roomidfield"></td>
-            </tr>
-            <tr>
-                <th>context.groupId</th>
-                <td id="groupidfield"></td>
-            </tr>
-        </table>
-    </div>
-    
     
     
     
