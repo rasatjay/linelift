@@ -27,17 +27,21 @@ function initializeApp(data) {
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
 		var sendtext="select=";
-		var areatype;
-		if (document.getElementById('regioncheck').checked) {areatype = "region";}
-		else if (document.getElementById('provincecheck').checked) {areatype = "province";}
-		
-		sendtext += areatype;
-		
-		var inputElements = document.forms["regionform"];
-		for(var i=0; inputElements[i]; ++i){
-			if(inputElements[i].checked){
-				 sendtext += inputElements[i].value;
+		if (document.getElementById('regioncheck').checked) {
+			sendtext += "region";
+			var inputElements = document.forms["regionform"];
+			for(var i=0; inputElements[i]; ++i){
+				if(inputElements[i].checked){
+					sendtext += inputElements[i].value;
+				}
 			}
+			
+		}
+		
+		else if (document.getElementById('provincecheck').checked) {
+			sendtext += "province";
+			sendtext += document.getElementById('provinceselect').value;
+
 		}
 		
         liff.sendMessages([{
