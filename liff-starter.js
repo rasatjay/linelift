@@ -28,7 +28,8 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
 		var areatype;
 		if (document.getElementById('regioncheck').checked) {areatype = "region";}
-		else if (document.getElementById('provincecheck').checked) {areatype = "province";}
+		else if (document.getElementById('provincecheck').checked) {areatype = "province".append("asdf";}
+		
         liff.sendMessages([{
             type: 'text',
             text: areatype
