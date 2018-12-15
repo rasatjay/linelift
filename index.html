@@ -45,22 +45,24 @@
     <div class="container">
         <div class="control-group">
             <h1 id="province">ระยะทาง</h1>
-            <label class="control control--checkbox">Mini (0-15km)
-                <input type="checkbox" checked="checked"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox">Half (15-30km)
-                <input type="checkbox"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox">Full (30-45km)
-                <input type="checkbox"/>
-                <div class="control__indicator"></div>
-            </label>
-            <label class="control control--checkbox">Ultra (45++km)
-                <input type="checkbox"/>
-                <div class="control__indicator"></div>
-            </label>
+			<form id="regionform">
+				<label class="control control--checkbox">Mini (0-15km)
+					<input type="checkbox" checked="checked" value="mini"/>
+					<div class="control__indicator"></div>
+				</label>
+				<label class="control control--checkbox">Half (15-30km)
+					<input type="checkbox" value="half"/>
+					<div class="control__indicator"></div>
+				</label>
+				<label class="control control--checkbox">Full (30-42.5km)
+					<input type="checkbox" value="full"/>
+					<div class="control__indicator"></div>
+				</label>
+				<label class="control control--checkbox">Ultra (42.5++km)
+					<input type="checkbox" value="ultra"/>
+					<div class="control__indicator"></div>
+				</label>
+			</form>
         </div>
         <div class="control-group">
             <h1>สถานที่</h1>
@@ -71,28 +73,28 @@
             <form id="regionform">
             <dd>
 			<label class="control control--checkbox" style ="min-width : 110px;"> ภาคกลาง
-            <input type="checkbox" checked="checked" name ="regioncheck" value="2"/>
+            <input type="checkbox" checked="checked" value="2"/>
             <div class="control__indicator"></div>
             </label>
 			<label class="control control--checkbox" style ="min-width : 110px;">ภาคเหนือ
-            <input type="checkbox" name ="regioncheck" value ="1"/>
+            <input type="checkbox" value ="1"/>
             <div class="control__indicator"></div>
             </label>
             </label>
 			<label class="control control--checkbox" style ="min-width : 110px;">ภาคตะวันออก
-            <input type="checkbox" name ="regioncheck" value ="5"/>
+            <input type="checkbox"  value ="5"/>
             <div class="control__indicator"></div>
             </label>
 			<label class="control control--checkbox" style ="min-width : 110px;">ภาคตะวันตก
-            <input type="checkbox" name ="regioncheck" value ="4"/>
+            <input type="checkbox" value ="4"/>
             <div class="control__indicator"></div>
             </label>
 			<label class="control control--checkbox" style ="min-width : 110px;">ภาคใต้
-            <input type="checkbox" name ="regioncheck" value ="6"/>
+            <input type="checkbox" value ="6"/>
             <div class="control__indicator"></div>
             </label>
 			<label class="control control--checkbox" style ="min-width : 110px;">ภาคตะวันออกเฉียงเหนือ
-            <input type="checkbox" name ="regioncheck"value ="3"/>
+            <input type="checkbox" value ="3"/>
             <div class="control__indicator"></div>
 			</form>
 			
@@ -198,8 +200,8 @@
             <h1>ช่วงเวลา</h1>
             <div class="select">
                 <select>
-                    <option>2019</option>
-                    <option>2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
                 </select>
                 <div class="select__arrow"></div>
             </div>
