@@ -26,7 +26,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
-		var testtext = document.getElementByTagName('radio').value;
+		var testtext = document.getElementByName('radio').value;
         liff.sendMessages([{
             type: 'text',
             text: testtext
