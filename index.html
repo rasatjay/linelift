@@ -283,15 +283,15 @@
         $('input[type=radio][name=radio]').change(function() {
             if (this.value == 'region') {
                 $('#provinceselect').prop('disabled', true);
-				$('#provincecheck').value("");
+				//$('#provincecheck').value("");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', false);
-				$('#regioncheck').value("region");
+				//$('#regioncheck').value("region");
             }
             else if (this.value == 'province') {
                 $('#provinceselect').prop('disabled', false);
-				$('#provincecheck').value("province");
+				//$('#provincecheck').value("province");
                 $('input[type=checkbox][name=regioncheck]').prop('disabled', true);
-				$('#regioncheck').value("");
+				//$('#regioncheck').value("");
             }
         });
     });
