@@ -31,7 +31,7 @@ function initializeApp(data) {
 		else if (document.getElementById('provincecheck').checked) {areatype = "province";}
         liff.sendMessages([{
             type: 'text',
-            text: testtext
+            text: areatype
         }
 		
 		
