@@ -12,12 +12,7 @@ function initializeApp(data) {
     document.getElementById('roomidfield').textContent = data.context.roomId;
     document.getElementById('groupidfield').textContent = data.context.groupId;
 
-    // openWindow call
-    document.getElementById('openwindowbutton').addEventListener('click', function () {
-        liff.openWindow({
-            url: 'https://line.me'
-        });
-    });
+
 
     // closeWindow call
     document.getElementById('closewindowbutton').addEventListener('click', function () {
@@ -62,13 +57,4 @@ function initializeApp(data) {
         });
     });
 	
-}
-
-function toggleProfileData() {
-    var elem = document.getElementById('profileinfo');
-    if (elem.offsetWidth > 0 && elem.offsetHeight > 0) {
-        elem.style.display = "none";
-    } else {
-        elem.style.display = "block";
-    }
 }
