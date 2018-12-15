@@ -26,10 +26,11 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
+		var sendtext="select=";
 		var areatype;
 		if (document.getElementById('regioncheck').checked) {areatype = "region";}
 		else if (document.getElementById('provincecheck').checked) {areatype = "province";}
-		areatype.innerHTML += 'Extra stuff';
+		sendtext += areatype;
         liff.sendMessages([{
             type: 'text',
             text: areatype
