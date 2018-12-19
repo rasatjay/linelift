@@ -21,19 +21,23 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
+		var distanceboxnotempty = false;
 		var sendtext="select=distance";
 		var inputElements = document.forms["distanceform"];
 			for(var i=0; inputElements[i]; ++i){
 				if(inputElements[i].checked){
 					sendtext += inputElements[i].value;
+					distanceboxnotempty = true;
 				}
 			}
 		if (document.getElementById('regioncheck').checked) {
 			sendtext += "region";
 			inputElements = document.forms["regionform"];
+			var regionboxnotempty = false;
 			for(var i=0; inputElements[i]; ++i){
 				if(inputElements[i].checked){
 					sendtext += inputElements[i].value;
+					regionboxnotempty = true;
 				}
 			}
 			
@@ -49,27 +53,33 @@ function initializeApp(data) {
 		
 		sendtext += "month";
 		inputElements = document.forms["monthform"];
+		var monthboxnotempty = false;
 		for(var i=0; inputElements[i]; ++i){
 			if(inputElements[i].checked){
 				sendtext += inputElements[i].value;
+				monthboxnotempty = true;
 			}
 		}
+		if (distanceboxnotempty && regionboxnotempty && monthboxnotempty) {
+			liff.sendMessages([{
+				type: 'text',
+				text: sendtext
+			}
 		
-        liff.sendMessages([{
-            type: 'text',
-            text: sendtext
-        }
-		
-		//, {
-        //    type: 'sticker',
-        //    packageId: '2',
-        //    stickerId: '144'
-        //}
-		]).then(function () {
-			liff.closeWindow();
-        }).catch(function (error) {
-            window.alert("Error sending message: " + error);
-        });
+			//, {
+			//    type: 'sticker',
+			//    packageId: '2',
+			//    stickerId: '144'
+			//}
+			]).then(function () {
+				liff.closeWindow();
+			}).catch(function (error) {
+				window.alert("Error sending message: " + error);
+			});
+		}
+		else {
+			window.alert("checkbox was unselected");
+		}
     });
 	
 }
