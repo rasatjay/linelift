@@ -38,13 +38,28 @@
             </tr>
         </table>
     </div>
-
-   
-    
-    
+	<div class="topiccontainer">
+		<div class="topic">
+			<h1>ค้นหา</h1>
+		</div>
+	</div>
     <div class="container">
+		<div class="control-group">
+            <h1 id="type">ลักษณะเส้นทาง</h1>
+			<form id="typeform">
+				<label class="control control--checkbox">Road <font color="CDCDCD">(เส้นทางถนน)</font>
+					<input type="checkbox" checked="checked" value="road"/>
+					<div class="control__indicator"></div>
+				</label>
+				<label class="control control--checkbox">Trail <font color="CDCDCD">(เส้นทางธรรมชาติ)</font>
+					<input type="checkbox" value="trail"/>
+					<div class="control__indicator"></div>
+				</label>
+			</form>
+        </div>
+		
         <div class="control-group">
-            <h1 id="province">ระยะทาง</h1>
+            <h1 id="distance">ระยะทาง</h1>
 			<form id="distanceform">
 				<label class="control control--checkbox">Mini  <font color="CDCDCD">(0-15 km)</font>
 					<input type="checkbox" checked="checked" value="mini"/>
