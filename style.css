@@ -108,6 +108,7 @@ h1 {
     height: 16px;
     width: 16px;
     background: #e6e6e6;
+	border-radius: 4px;
 }
 .control--radio .control__indicator {
     border-radius: 50%;
@@ -173,7 +174,7 @@ h1 {
     padding: 10px 15px;
     outline: 0;
     border: 0;
-    border-radius: 0;
+    border-radius: 4px;
     background: #e6e6e6;
     color: #7b7b7b;
     appearance: none;
