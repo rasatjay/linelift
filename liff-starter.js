@@ -62,9 +62,29 @@ function initializeApp(data) {
 		}
 		if (distanceboxnotempty && regionboxnotempty && monthboxnotempty) {
 			liff.sendMessages([{
-				type: 'text',
-				text: sendtext
-			}
+  "type": "flex",
+  "altText": "Flex Message",
+  "contents": {
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "sm",
+      "contents": [
+        {
+          "type": "button",
+          "action": {
+            "type": "uri",
+            "label": "See more",
+            "uri": "https://linecorp.com"
+          },
+          "flex": "1",
+          "gravity": "center"
+        }
+      ]
+    }
+  }
+}
 		
 			//, {
 			//    type: 'sticker',
