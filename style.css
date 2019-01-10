@@ -38,6 +38,7 @@ img {
 
 .buttongroup{
     text-align: center;
+	margin-bottom:20px;
 }
 
 button {
@@ -110,6 +111,23 @@ h1 {
     margin: 10px;
     margin-top:10px;
     margin-bottom:10px;
+}
+.button2{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	//color: #757575;
+	font-size: 14;
+	font-family: 'Kanit', sans-serif;
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #FFFFFF;
+	border: solid #B5B5B5 1px;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 .control {
     display: inline-block;
@@ -236,5 +254,17 @@ h1 {
 .select select:disabled ~ .select__arrow {
     border-top-color: #ccc;
 }
+.month-checkbox {
+	margin-left: 5%;
+	max-width:450px;
+
+	
+}
+
+
+
+
+
+
 
 
