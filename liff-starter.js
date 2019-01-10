@@ -78,7 +78,6 @@ function initializeApp(data) {
             "label": "See more",
             "uri": "https://linecorp.com"
           },
-          "flex": "1",
           "gravity": "center"
         }
       ]
